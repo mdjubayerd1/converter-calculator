@@ -1,2 +1,2 @@
 # converter-calculator
-here i made a converter calculator for converting different parameters ..
+Here i made a simple converter calculator for converting different parameters using html ,jss,javascript ..
