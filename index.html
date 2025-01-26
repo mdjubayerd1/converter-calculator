@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .converter {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        input, select {
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff5722;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #e64a19;
+            transform: scale(1.1);
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="converter">
+        <h1>Converter Calculator</h1>
+        <input type="number" id="inputValue" placeholder="Enter value">
+        <select id="unitFrom">
+            <option value="foot">Foot</option>
+            <option value="inch">Inch</option>
+            <option value="cm">Centimeter</option>
+            <option value="km">Kilometer</option>
+            <option value="meter">Meter</option>
+            <option value="kg">Kilogram</option>
+            <option value="gram">Gram</option>
+            <option value="litre">Litre</option>
+            <option value="ml">Millilitre</option>
+        </select>
+        <select id="unitTo">
+            <option value="inch">Inch</option>
+            <option value="foot">Foot</option>
+            <option value="cm">Centimeter</option>
+            <option value="meter">Meter</option>
+            <option value="km">Kilometer</option>
+            <option value="gram">Gram</option>
+            <option value="kg">Kilogram</option>
+            <option value="ml">Millilitre</option>
+            <option value="litre">Litre</option>
+        </select>
+        <button onclick="convert()">Convert</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
